@@ -1,0 +1,32 @@
+<%= form_with(model: housebook, local: true) do |form| %>
+  <% if housebook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(housebook.errors.count, "error") %> prohibited this housebook from being saved:</h2>
+
+      <ul>
+      <% housebook.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Date %>
+    <%= form.text_field :Date, id: :housebook_Date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Use %>
+    <%= form.text_field :Use, id: :housebook_Use %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Payment %>
+    <%= form.text_field :Payment, id: :housebook_Payment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

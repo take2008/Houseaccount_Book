@@ -1,0 +1,2 @@
+class Housebook < ApplicationRecord
+end

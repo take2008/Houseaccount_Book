@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @housebook.Date %>
+</p>
+
+<p>
+  <strong>Use:</strong>
+  <%= @housebook.Use %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @housebook.Payment %>
+</p>
+
+<%= link_to 'Edit', edit_housebook_path(@housebook) %> |
+<%= link_to 'Back', housebooks_path %>
