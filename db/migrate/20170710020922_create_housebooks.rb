@@ -3,7 +3,7 @@ class CreateHousebooks < ActiveRecord::Migration[5.1]
     create_table :housebooks do |t|
       t.string :Date
       t.string :Use
-      t.int :Payment
+      t.integer :Payment
 
       t.timestamps
     end

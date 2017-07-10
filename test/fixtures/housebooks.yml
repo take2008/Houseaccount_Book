@@ -3,9 +3,9 @@
 one:
   Date: MyString
   Use: MyString
-  Payment: 
+  Payment: 1
 
 two:
   Date: MyString
   Use: MyString
-  Payment: 
+  Payment: 1
